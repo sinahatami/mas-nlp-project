@@ -14,10 +14,12 @@ An autonomous system designed to simulate, moderate, and evaluate structured deb
 
 ## 🚀 Key Features
 
+* **⚡ GPU Acceleration**: Automatically detects and utilizes PyTorch CUDA capabilities for rapid, high-performance LLM generation.
 * **🧠 Dynamic Argument Generation**: Employs the `gpt2-medium` model to generate context-aware arguments based on specific rhetorical styles: **Factual** or **Emotional**.
+* **🥊 Active Rebuttals**: Integrates a dedicated rebuttal agent that analyzes opponent points to formulate direct, real-time counter-arguments during the debate.
 * **⚖️ Automated Judging**: Utilizes the `spaCy` library to calculate a **Relevance Score** (0-100) by measuring semantic similarity between the argument and the topic.
 * **🔄 Adaptive Feedback**: The moderator tracks performance history and provides qualitative feedback to agents (e.g., "performing well" or "needs improvement") based on their average scores.
-* **📝 PDF Reporting**: Automatically compiles a full transcript of the debate—including scores, rebuttals, and winners—into a professional PDF document.
+* **📝 PDF Reporting**: Automatically compiles a full transcript of the debate—including scores, rebuttals, and winners—into a professional `output/debate_summary.pdf` document.
 * **🎭 Diverse Personas**: Features specialized agents for empirical data, emotional appeals, and dedicated rebuttals.
 
 ---

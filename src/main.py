@@ -1,3 +1,4 @@
+import os
 from agents.evaluator import EvaluateModeratorAgent
 from utils.pdf_generator import create_debate_pdf
 from agents.debater import DebaterAgent
@@ -120,4 +121,5 @@ for index1, topic in enumerate(topics):
         print("\nThe debate ends in a tie.")
 
 
-create_debate_pdf("debate_summary.pdf", debate_content)
+os.makedirs('output', exist_ok=True)
+create_debate_pdf("output/debate_summary.pdf", debate_content)

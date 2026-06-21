@@ -4,7 +4,7 @@ from .base import Agent
 
 class SimpleModeratorAgent(Agent):
     def __init__(self, name):
-        super().__init__(name, 'Evaluate Moderator')
+        super().__init__(name, 'Simple Moderator')
         self.turn_order = []
         self.current_turn_index = 0
         self.topics = []

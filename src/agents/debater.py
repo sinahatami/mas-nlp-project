@@ -31,7 +31,7 @@ class DebaterAgent(Agent):
             prompt = random.choice(factual_prompts)
         else:
             prompt = random.choice(factual_prompts) + f" Considering previous points: {context}"
-        return self.argument_generator(prompt, max_new_tokens=120)[0]['generated_text']
+        return self.argument_generator(prompt, max_new_tokens=120, truncation=True)[0]['generated_text']
     
     def generate_emotional_argument(self, topic, context):
         emotional_prompts = [
@@ -43,6 +43,6 @@ class DebaterAgent(Agent):
             prompt = random.choice(emotional_prompts)
         else:
             prompt = random.choice(emotional_prompts) + f" Considering previous points: {context}"
-        return self.argument_generator(prompt, max_new_tokens=120)[0]['generated_text']
+        return self.argument_generator(prompt, max_new_tokens=120, truncation=True)[0]['generated_text']
 
 

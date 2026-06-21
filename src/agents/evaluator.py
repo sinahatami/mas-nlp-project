@@ -5,7 +5,7 @@ nlp = spacy.load("en_core_web_md")
 
 class EvaluateModeratorAgent(Agent):
     def __init__(self, name):
-        super().__init__(name, 'Simple Moderator')
+        super().__init__(name, 'Evaluate Moderator')
         
 
     def evaluate_relevance_spacy(self, current_debater, argument, topic):
@@ -22,15 +22,15 @@ class EvaluateModeratorAgent(Agent):
         print(f"Average feedback score for {current_debater.name}: {average_score:.2f}")
         result = ''
 
-        if average_score < 5:
-            result = f"{current_debater.name}'s average score is {average_score}. So, needs significant improvement in argument quality."
+        if average_score < 50:
+            result = f"{current_debater.name}'s average score is {average_score:.2f}. So, needs significant improvement in argument quality."
             print(result)
             return average_score, result 
-        elif average_score < 7:
-            result = f"{current_debater.name}'s average score is {average_score}. So, could benefit from moderate improvements."
+        elif average_score < 70:
+            result = f"{current_debater.name}'s average score is {average_score:.2f}. So, could benefit from moderate improvements."
             print(result)
             return average_score, result 
         else:
-            result = f"{current_debater.name}'s average score is {average_score}. So, is performing well. Minor tweaks could be made."
+            result = f"{current_debater.name}'s average score is {average_score:.2f}. So, is performing well. Minor tweaks could be made."
             print(result)
             return average_score, result 

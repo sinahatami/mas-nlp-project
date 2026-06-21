@@ -9,5 +9,5 @@ class RebuttalAgent(Agent):
     
     def generate_rebuttal(self, opponent_argument, topic):
         context = f"Rebutting the argument on {topic}: {opponent_argument}"
-        rebuttal = self.argument_generator(context, max_length=80)[0]['generated_text']
+        rebuttal = self.argument_generator(context, max_new_tokens=80, truncation=True)[0]['generated_text']
         return rebuttal
