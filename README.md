@@ -1,4 +1,12 @@
-# 🤖 Multi-Agent Debate Simulation Framework
+<div align="center">
+  <h1>🤖 Multi-Agent Debate Simulation Framework</h1>
+  
+  ![Python](https://img.shields.io/badge/Language-Python-blue.svg)
+  ![NLP](https://img.shields.io/badge/Domain-NLP-green.svg)
+  ![Hugging Face](https://img.shields.io/badge/Framework-Hugging_Face-orange.svg)
+  ![spaCy](https://img.shields.io/badge/Library-spaCy-blueviolet.svg)
+  ![LLMs](https://img.shields.io/badge/Technology-LLMs-red.svg)
+</div>
 
 An autonomous system designed to simulate, moderate, and evaluate structured debates between AI personalities using Large Language Models (LLMs) and Natural Language Processing (NLP).
 
@@ -49,5 +57,6 @@ Ensure you have the following Python libraries installed:
 
 ### 2. Run the Simulation
 Execute the main script to begin a debate on pre-configured topics such as Technology in Education, Climate Change, or AI Risks.
+
 ```bash
 python main.py
