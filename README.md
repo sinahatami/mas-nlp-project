@@ -38,12 +38,12 @@ The framework utilizes a specialized cast to simulate a complete debate environm
 
 ## 📂 Project Structure
 
-* `debater_agent.py`: Logic for factual and emotional argument generation.
-* `rebuttal_agent.py`: Specialized agent for generating counter-arguments.
-* `evaluate_moderator_agent.py`: Scoring system using NLP similarity metrics.
-* `simple_moderate_agent.py`: Manages debate phases and turn orders.
-* `output_debate.py`: Logic for PDF generation using `ReportLab`.
-* `main.py`: The orchestrator that runs the multi-round simulation.
+* `src/agents/debater.py`: Logic for factual and emotional argument generation.
+* `src/agents/rebuttal.py`: Specialized agent for generating counter-arguments.
+* `src/agents/evaluator.py`: Scoring system using NLP similarity metrics.
+* `src/agents/moderator.py`: Manages debate phases and turn orders.
+* `src/utils/pdf_generator.py`: Logic for PDF generation using `ReportLab`.
+* `src/main.py`: The orchestrator that runs the multi-round simulation.
 
 ---
 
@@ -59,4 +59,6 @@ Ensure you have the following Python libraries installed:
 Execute the main script to begin a debate on pre-configured topics such as Technology in Education, Climate Change, or AI Risks.
 
 ```bash
-python main.py
+export PYTHONPATH=.
+python src/main.py
+```

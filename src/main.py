@@ -1,8 +1,8 @@
-from evaluate_moderator_agent import EvaluateModeratorAgent
-from output_debate import create_debate_pdf
-from debater_agent import DebaterAgent
-from rebuttal_agent import RebuttalAgent
-from simple_moderate_agent import SimpleModeratorAgent
+from agents.evaluator import EvaluateModeratorAgent
+from utils.pdf_generator import create_debate_pdf
+from agents.debater import DebaterAgent
+from agents.rebuttal import RebuttalAgent
+from agents.moderator import SimpleModeratorAgent
 
 
 debater1 = DebaterAgent(name="Alice", style="Factual")

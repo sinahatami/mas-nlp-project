@@ -1,6 +1,6 @@
 import random
 from transformers import pipeline
-from agent import Agent
+from .base import Agent
 
 
 

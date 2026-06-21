@@ -1,4 +1,4 @@
-from agent import Agent
+from .base import Agent
 
 import spacy
 nlp = spacy.load("en_core_web_sm")
