@@ -38,7 +38,3 @@ class SimpleModeratorAgent(Agent):
         for phase in ['Opening Statements', 'Main Arguments', 'Rebuttals', 'Closing Statements']:
             print(f"Phase: {phase}")
             
-    def set_turn_order(self, debaters):
-        self.turn_order = debaters
-
-

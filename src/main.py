@@ -96,7 +96,7 @@ for index1, topic in enumerate(topics):
             winner = debater1.name
             debate_content.append(f"\nThe winner is {winner} with a score of {relevance_score1:.2f} in round {index2 + 1}")
             print(f"\nThe winner is {winner} with a score of {relevance_score1:.2f} in round {index2 + 1}")
-        elif relevance_score1 < relevance_score1:
+        elif relevance_score1 < relevance_score2:
             winner = debater2.name
             debate_content.append(f"\nThe winner is {winner} with a score of {relevance_score2:.2f} in round {index2 + 1}")
             print(f"\nThe winner is {winner} with a score of {relevance_score2:.2f} in round {index2 + 1}")
@@ -116,7 +116,7 @@ for index1, topic in enumerate(topics):
         debate_content.append(f"\nThe winner is {winner} with a score of {average_score2:.2f} in topic of {topic}")
         print(f"\nThe winner is {winner} with a score of {average_score2:.2f} in topic of {topic}")
     else:
-        debate_content.append("\nThe debate ends in a tie  in topic of")
+        debate_content.append(f"\nThe debate ends in a tie in topic of {topic}")
         print("\nThe debate ends in a tie.")
 
 

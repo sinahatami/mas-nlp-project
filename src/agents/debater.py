@@ -1,5 +1,5 @@
 import random
-from transformers import pipeline
+from utils.llm import shared_argument_generator
 from .base import Agent
 
 
@@ -10,7 +10,7 @@ class DebaterAgent(Agent):
         super().__init__(name, 'Debater')
         self.feedback_history = []
         self.style = style
-        self.argument_generator = pipeline('text-generation', model='gpt2-medium')
+        self.argument_generator = shared_argument_generator
 
     def generate_argument(self, topic, previous_arguments=None):
         if previous_arguments is None:

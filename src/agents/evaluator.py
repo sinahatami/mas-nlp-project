@@ -1,7 +1,7 @@
 from .base import Agent
 
 import spacy
-nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load("en_core_web_md")
 
 class EvaluateModeratorAgent(Agent):
     def __init__(self, name):
@@ -17,9 +17,9 @@ class EvaluateModeratorAgent(Agent):
     def adapt_strategy(self, current_debater):
         if not current_debater.feedback_history:
             print(f"No feedback available for {current_debater.name}.")
+            return 0, "No feedback available yet."
         average_score = sum(current_debater.feedback_history) / len(current_debater.feedback_history)
         print(f"Average feedback score for {current_debater.name}: {average_score:.2f}")
-        current_debater.feedback_history.append(average_score)
         result = ''
 
         if average_score < 5:

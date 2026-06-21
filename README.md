@@ -30,7 +30,7 @@ The framework utilizes a specialized cast to simulate a complete debate environm
 | :--- | :--- | :--- | :--- |
 | **Alice** | Debater | **Factual**: Focuses on statistical impact and empirical evidence.| GPT-2 Medium |
 | **Bob** | Debater | **Emotional**: Focuses on ethical implications and personal stories. | GPT-2 Medium |
-| **Eve** | Rebuttal | **Counter-Arguments**: Analyzes opponent claims to generate direct rebuttals. | GPT-2 |
+| **Eve** | Rebuttal | **Counter-Arguments**: Analyzes opponent claims to generate direct rebuttals. | GPT-2 Medium |
 | **Carol** | Moderator | **Turn Management**: Orchestrates the flow, phases, and turn-taking. | Rule-based |
 | **Alex** | Evaluator | **Scoring**: Calculates semantic relevance and determines winners. | spaCy |
 
@@ -52,7 +52,7 @@ The framework utilizes a specialized cast to simulate a complete debate environm
 ### 1. Requirements
 Ensure you have the following Python libraries installed:
 * `transformers` (Hugging Face)
-* `spaCy` (with the `en_core_web_sm` model)
+* `spaCy` (with the `en_core_web_md` model)
 * `reportlab`
 
 ### 2. Run the Simulation

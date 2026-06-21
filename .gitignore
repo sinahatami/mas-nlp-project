@@ -1,2 +1,11 @@
-./__pycache__
-./venv
+# Environments
+venv/
+.env
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Outputs
+*.pdf
+output/
